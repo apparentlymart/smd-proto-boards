@@ -28,7 +28,7 @@ for i in xrange(1, 49):
         [
             Symbol('node'),
             [Symbol('ref'), Symbol('U2')],
-            [Symbol('pin'), i],
+            [Symbol('pin'), 49 - i],
         ],
     ]
 
