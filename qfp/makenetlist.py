@@ -5,7 +5,7 @@ import sexpdata
 import pprint
 from sexpdata import Symbol
 
-inf = open("qfpsoic.net.template", "r")
+inf = open("qfp.net.template", "r")
 netlist_tree = sexpdata.load(inf)
 
 nets = []
@@ -46,6 +46,6 @@ def fill_template(node):
 
 fill_template(netlist_tree)
 
-outf = open("qfpsoic.net", "w")
+outf = open("qfp.net", "w")
 sexpdata.dump(netlist_tree, outf)
 

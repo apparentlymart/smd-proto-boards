@@ -1,6 +1,6 @@
 (export (version D)
   (design
-    (source qfpsoic.sch)
+    (source qfp.sch)
     (date "Sat 07 Mar 2015 08:48:15 PM PST")
     (tool "Eeschema 0.201503060816+5481~22~ubuntu14.04.1-product")
     (sheet (number 1) (name /) (tstamps /)
@@ -9,7 +9,7 @@
         (company)
         (rev)
         (date)
-        (source qfpsoic.sch)
+        (source qfp.sch)
         (comment (number 1) (value ""))
         (comment (number 2) (value ""))
         (comment (number 3) (value ""))
@@ -17,7 +17,7 @@
   (components
     (comp (ref U1)
       (value QFP48)
-      (libsource (lib qfpsoic) (part QFP48))
+      (libsource (lib qfp) (part QFP48))
       (sheetpath (names /) (tstamps /))
       (tstamp 54FBDC40))
     (comp (ref P2)
@@ -31,8 +31,8 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 54FBDD68))
     (comp (ref U2)
-      (value SO48)
-      (libsource (lib qfpsoic) (part SO48))
+      (value TQFP48)
+      (libsource (lib qfp) (part TQFP48))
       (sheetpath (names /) (tstamps /))
       (tstamp 54FBE5F3)))
   (libparts
@@ -70,7 +70,7 @@
         (pin (num 22) (name P22) (type passive))
         (pin (num 23) (name P23) (type passive))
         (pin (num 24) (name P24) (type passive))))
-    (libpart (lib qfpsoic) (part QFP48)
+    (libpart (lib qfp) (part QFP48)
       (fields
         (field (name Reference) U)
         (field (name Value) QFP48))
@@ -123,10 +123,10 @@
         (pin (num 46) (name 46) (type BiDi))
         (pin (num 47) (name 47) (type BiDi))
         (pin (num 48) (name 48) (type BiDi))))
-    (libpart (lib qfpsoic) (part SO48)
+    (libpart (lib qfp) (part TQFP48)
       (fields
         (field (name Reference) U)
-        (field (name Value) SO48))
+        (field (name Value) TQFP48))
       (pins
         (pin (num 1) (name 1) (type input))
         (pin (num 2) (name 2) (type input))
@@ -177,8 +177,8 @@
         (pin (num 47) (name 47) (type BiDi))
         (pin (num 48) (name 48) (type BiDi)))))
   (libraries
-    (library (logical qfpsoic)
-      (uri qfpsoic.lib))
+    (library (logical qfp)
+      (uri qfp.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib)))
   (nets
